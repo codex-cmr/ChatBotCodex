@@ -2,19 +2,29 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat avec FastAPI</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Codex ChatBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="chat-container">
-        <div class="chat-header">Chat avec FastAPI</div>
+        <div class="chat-header">
+            <img src="CODEX LOGO.png" alt="Codex Logo" class="logo">
+            <span>Assistant IA Codex</span>
+            <div class="theme-toggle" onclick="toggleTheme()" title="Changer le thème"></div>
+        </div>
         <div class="chat-messages" id="chatMessages"></div>
         <div class="chat-input">
-            <input type="text" id="userInput" placeholder="Tapez votre message..." />
+            <input type="text" id="userInput" placeholder="Posez votre question à Codex..." />
             <button onclick="sendMessage()">Envoyer</button>
         </div>
     </div>
-    <script src="static/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
