@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    container_name: codex-llm
+    ports:
+      - "8089:8089"
+    env_file:
+      - .env
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge
